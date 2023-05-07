@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="https://www.welovedogs.jp/movie/video_01.mp4" controls width="300" height="300" autoplay id="video"></video>
+    <audio src="https://www.gutenberg.org/files/21146/mp3/21146-04.mp3" controls id="audio"></audio>
+    <button onclick="on()">Play</button>
+    <button onclick="off()">Stop</button>
+
+    <script>
+var audio_player = document.getElementById("audio")
+console.log(audio_player)
+function on()
+{
+    audio_player.play();
+}
+function off()
+{
+    audio_player.pause();
+}
+    </script>
+
+
+    <button onclick="start()">Play</button>
+    <button onclick="stop()"> Pause</button>
+    <script>
+      
+      var video_player = document.getElementById("video")
+       function start()
+       {
+        video_player.play();
+       }
+
+       function stop()
+       {
+        video_player.pause()
+       }
+      
+
+    </script>
+</body>
+</html>

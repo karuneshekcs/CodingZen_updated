@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Practice at home 12122022</title>
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Album</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </div>
+<!-- ------------------------------------------ -->
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- ------------------------------------------ -->
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="books">
+        
+        
+
+      </div>
+    </div>
+  </div>
+
+
+<script>
+    var books = [
+        {
+                name: "IKIGAI",
+                description: "THE INTERNATIONAL BESTSELLER We all have an ikigai. It's the Japanese word for ‘a reason to live’ or ‘a reason to jump out of bed in the morning’. It’s the place where your needs, desires, ambitions, and satisfaction meet. A place of balance.",
+                img: "https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg",
+                buy: "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=pd_bxgy_img_sccl_2/262-4517612-0693852?pd_rd_w=P5Mlw&content-id=amzn1.sym.d68c4347-8b80-4998-9474-4671a1e32e96&pf_rd_p=d68c4347-8b80-4998-9474-4671a1e32e96&pf_rd_r=7X6Y8XAR7EH90DW2CXFP&pd_rd_wg=cBma0&pd_rd_r=ca657f70-1316-4830-9c23-79423db5968e&pd_rd_i=178633089X&psc=1",
+        },
+        {
+                name: "IKIGAI",
+                description: "THE INTERNATIONAL BESTSELLER We all have an ikigai. It's the Japanese word for ‘a reason to live’ or ‘a reason to jump out of bed in the morning’. It’s the place where your needs, desires, ambitions, and satisfaction meet. A place of balance.",
+                img: "https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg",
+                buy: "https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=pd_bxgy_img_sccl_2/262-4517612-0693852?pd_rd_w=P5Mlw&content-id=amzn1.sym.d68c4347-8b80-4998-9474-4671a1e32e96&pf_rd_p=d68c4347-8b80-4998-9474-4671a1e32e96&pf_rd_r=7X6Y8XAR7EH90DW2CXFP&pd_rd_wg=cBma0&pd_rd_r=ca657f70-1316-4830-9c23-79423db5968e&pd_rd_i=178633089X&psc=1",
+        },
+
+    ]
+
+    for(var i=0; i<books.length; i++)
+    {
+        document.getElementById("books").innerHTML += `
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="${books[i].img}">
+
+            <div class="card-body">
+              <p class="card-text">${books[i].description}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="${books[i].buy}" type="button" class="btn btn-sm btn-outline-secondary">Buy Now</a>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        `
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+display headings: It is used to create better headings (larger font size and lighter font weight). There are four classes exists in display headings which are .display-1, .display-2, .display-3, and .display-4.
+lead: It is used to make a paragraph stand out i.e. visually better.
+mark: It is used to highlight the text content.
+initialism: It is used to render abbreviation in slightly small text size.
+blockquote: It is used to quote the text content.
+blockquote-footer: It is used to add the footer details for identifying the source of the Quote.
+text-center: It is used to align the text to the center.
+list-inline: It is used to make the element of list inline.
+text-truncate: It is used to shorten the longer text by truncating with an ellipsis.
+text-muted: It is used for text color, text-muted fades the text i.e. text greyed out.
+text-uppercase: It is used to transform text into uppercase.
+text-lowercase: It is used to transform text into lowercase.
+text-capitalize: It is used to transform text to capitalize first letter of each word leaving other letters in lowercase.
+.font-weight-bold: It sets the font weight to bold. It is used to display the importance of text.
+.font-weight-bolder: It sets the font weight to deep bold. It is used to display the importance of text.
+.font-italic: It sets the font style to italic.
+.font-weight-light: It sets the font weight to light.
+.font-weight-lighter: It sets the lighter font weight.
+.font-weight-normal: It sets the normal font size and weight.
+.lead: It makes the paragraph stand out.
+.small: It is used to create secondary subheadings.
+.text-left: It sets the left alignment of text.
+.text-*-left: It sets the left alignment of text on all screens (small, medium, large or xlarge).
+.text-break: It breaks the long string text into short text substrings.

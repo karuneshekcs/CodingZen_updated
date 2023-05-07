@@ -1,0 +1,15 @@
+var num1 = parseInt(prompt("Enter a number"))
+        var num2 = parseInt(prompt("Enter second number"))
+
+        // 1. If sum of two numbers is greater than 50 and sum is even then alert lucky number
+        //2.  Else print not a lucky number
+        // 3. How to check whether a number is even or odd - We divide it with 2 and if remainder is 0 
+        var sum = num1 + num2
+        if(sum >= 50 && sum%2==0)
+        {
+            alert("Lucky Number")
+        }
+        else
+        {
+            alert('Not a lucky number')
+        }

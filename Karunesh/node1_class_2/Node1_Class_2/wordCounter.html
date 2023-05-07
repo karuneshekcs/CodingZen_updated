@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="30" cols="100" id="text"></textarea>
+    <!-- <button onclick="calc()">Calculate</button> -->
+    <div id="display" style="height: 50px; width: 80px; border: 2px solid black; display: flex; align-items: center; justify-content: center;">0</div>
+    <script>
+        function calc()
+        {
+            var text = document.getElementById("text").value;
+            var space_count = 0;
+            for(let i=0; i<text.length; i++)
+            {
+                if(text[i]==" ")
+                {
+                    space_count++;
+                }
+                if(text[i]=='.')
+                {
+                    space_count++;
+                }
+
+            }
+
+           
+            document.getElementById("display").innerHTML = space_count
+
+        }
+
+
+        document.getElementById("text").addEventListener('input', calc)
+    </script>
+</body>
+</html>

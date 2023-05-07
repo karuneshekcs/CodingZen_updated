@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            height: 500px;
+            display: flex;
+            /* flex-direction:column-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap; */
+            /* justify-content: center; */
+            /* justify-content:flex-end; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            align-items: baseline;
+        }
+        .card{
+            width: 100px;
+            height: 100px;
+            
+        }
+        .card1{
+            height: 70px;
+            width: 100px;
+        }
+        .class{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color:aqua; width: 1000px;">
+        <div class="card" style="background-color:rgb(189, 64, 15); flex-grow: 1;">1</div>
+        <div class="card" style="background-color:rgb(9, 211, 43); flex-grow:2;">2</div>
+        <div class="card" style="background-color:rgb(202, 23, 172);">3</div>
+        <div class="card" style="background-color:rgb(189, 64, 15);">1</div>
+        <div class="card" style="background-color:rgb(9, 211, 43);">2</div>
+    </div>
+
+    <div style="background-color:red; height: 200px; width: 1000px; display: flex; align-items: center; justify-content:space-around;">
+        <div style="background-color:blue; height:100px; width:200px">1</div>
+        <div style="background-color:blue; height:100px; width:200px">1</div>
+        <div style="background-color:blue; height:100px; width:200px">1</div>
+    </div> <br>
+    
+</body>
+</html>
